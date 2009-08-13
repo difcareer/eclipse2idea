@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="nakedobjects">
+  <template name="noa" value="// {{ $ACTION_NAME$&#10;@org.nakedobjects.applib.annotation.MemberOrder(sequence=&quot;1&quot;)&#10;public $RETURN_TYPE$ $ACTION_NAME$ (final $PARAMETER_TYPE$ $PARAMETER_VAR$) {&#10;&#9;return $END$null; // TODO: business logic here&#10;}&#10;// }}&#10;&#10;" description="Action" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="&quot;ActionName&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN_TYPE" expression="&quot;ReturnType&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETER_TYPE" expression="&quot;ParameterType&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETER_VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="noacho" value="public java.util.List&lt;$PARAMETER_TYPE$&gt; choices$PARAMETER_NUM_THEN_CAPITALIZED_ACTION_NAME$() {&#10;&#9;return $END$java.util.Collections.emptyList(); // TODO: return list of choices for argument N&#10;}" description="Action argument N choices" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAMETER_TYPE" expression="&quot;ParameterType&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETER_NUM_THEN_CAPITALIZED_ACTION_NAME" expression="&quot;ParameterNumThenCapitalizedActionName&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="noadef" value="public $PARAMETER_TYPE$ default$PARAMETER_NUM_THEN_CAPITALIZED_ACTION_NAME$() {&#10;&#9;return $END$null; // TODO: return default for argument N&#10;}" description="Action argument defaults" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAMETER_TYPE" expression="&quot;ParameterType&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETER_NUM_THEN_CAPITALIZED_ACTION_NAME" expression="&quot;ParameterNumThenCapitalizedActionName&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="noadis" value="public String disable$ACTION_NAME$() {&#10;&#9;return $END$null; // TODO: return reason why action disabled, null if enabled&#10;}" description="Action disabling" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="&quot;ActionName&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="noahid" value="public boolean hide$ACTION_NAME$() {&#10;&#9;return $END$false; // TODO: return true if action is hidden, false if visible&#10;}" description="Action hiding" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="&quot;ActionName&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="noaval" value="public String validate$ActionName$(final $ParameterType$ $parameterType$) {&#10;&#9;return $END$null; // TODO: return reason why action arguments are invalid, null if ok&#10;}" description="Action validation" toReformat="true" toShortenFQNames="true">
+    <variable name="ActionName" expression="&quot;ActionName&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ParameterType" expression="&quot;ParameterType&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="parameterType" expression="suggestVariableName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
