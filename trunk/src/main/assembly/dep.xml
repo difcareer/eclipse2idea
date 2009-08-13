@@ -1,0 +1,23 @@
+<assembly>
+    <id>dep</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/classes</directory>
+            <excludes>
+                <exclude>*-test*</exclude>
+            </excludes>
+            <outputDirectory/>
+        </fileSet>
+        <fileSet>
+            <directory>${project.build.directory}/lib-classes</directory>
+            <excludes>
+                <exclude>**/SetPropertyRule.class</exclude>
+            </excludes>
+            <outputDirectory/>
+        </fileSet>
+    </fileSets>
+</assembly>
